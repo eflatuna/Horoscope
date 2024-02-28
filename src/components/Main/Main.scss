@@ -1,0 +1,67 @@
+@import "../../scss/variables";
+
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+	.cards {
+		background-color: $cardNavBgColor;
+		margin: 1rem;
+		padding: 1rem;
+		border-radius: 10px;
+		position: relative;
+		overflow: hidden;
+		&:hover .card-over {
+			transform: translate(0%);
+		}
+	}
+
+	.title {
+		color: white;
+		font-size: 1rem;
+		padding: 1rem;
+	}
+
+	img {
+		width: 500px;
+		height: 350px;
+		object-fit: cover;
+		border-radius: 5px;
+		box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.7);
+		filter: grayscale(100%);
+		&:hover {
+			filter: none;
+		}
+	}
+
+	.card-over {
+		color: white;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		font-size: 1, 5rem;
+		background-color: rgb(0, 0, 0, 0.5);
+		padding: 2.5rem;
+		transform: translateY(100%);
+		z-index: 1;
+		transition: transform 0.7s ease-in-out;
+	}
+
+	.cards h1 {
+		display: inline-block;
+		background-color: black;
+		margin: 5px;
+		padding: 10px;
+		border-radius: 10px;
+		position: absolute;
+		top: 65px;
+		left: 35px;
+		// z-index: 5;
+	}
+
+	.cards h2 {
+		color: black;
+		text-align: center;
+	}
+}
