@@ -1,4 +1,4 @@
-# Project-001 : Horoscope App
+#Horoscope App
 
 ## Description
 
